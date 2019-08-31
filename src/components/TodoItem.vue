@@ -6,11 +6,16 @@
             <p>{{todo.date | formatDate}}</p>
             <button @click="$emit('del-todo', todo._id)" class="del">x</button>
         </p>
+        <EditTodo></EditTodo>
     </div>
 </template>
 <script>
+import EditTodo from './EditTodo';
 export default {
     name: 'TodoItem',
+    components: {
+        EditTodo
+    },
     props: ['todo']
 }
 </script>
@@ -23,6 +28,10 @@ export default {
         margin: 1em 0;
         border-radius: 10px;
         box-shadow: 5px 5px forestgreen;
+        transition: 1s ease-in;
+    }
+    .todo-item:hover {
+        left: 10px;
     }
     .del {
         position: absolute;
