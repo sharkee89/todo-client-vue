@@ -43,21 +43,15 @@ export default {
     }   
     form {
         display: flex;
+        flex-direction: column;
     }
     input[type="text"] {
-        flex: 1;
         padding: 5px;
     }
     input[type="date"] {
-        flex: 1;
-        padding: 5px;
-    }
-    textarea {
-        flex: 1;
         padding: 5px;
     }
     input[type="submit"] {
-        flex: 2;
         background-color: palevioletred;
     }
 </style>

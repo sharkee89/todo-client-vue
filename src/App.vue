@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      serviceUrl: 'http://localhost:3000/todos',
+      serviceUrl: 'https://young-dawn-58008.herokuapp.com/todos',
       todos: []
     }
   },
