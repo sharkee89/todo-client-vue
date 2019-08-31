@@ -4,7 +4,7 @@
             <input type="text" v-model="title" name="title" placeholder="Enter title...">
             <input type="text" v-model="description" name="description" placeholder="Enter description...">
             <input type="date" v-model="date" name="date" placeholder="Enter date...">
-            <input type="submit" value="Submit" class="btn">
+            <input type="submit" value="Add todo" class="btn">
         </form>
     </div>
 </template>
@@ -45,11 +45,9 @@ export default {
         display: flex;
         flex-direction: column;
     }
-    input[type="text"] {
+    input[type="text"], input[type="date"] {
         padding: 5px;
-    }
-    input[type="date"] {
-        padding: 5px;
+        margin-bottom: 1em;
     }
     input[type="submit"] {
         background-color: palevioletred;

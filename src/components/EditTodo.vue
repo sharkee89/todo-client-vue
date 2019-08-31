@@ -26,11 +26,9 @@ export default {
         display: flex;
         flex-direction: column;
     }
-    input[type="text"] {
+    input[type="text"], input[type="date"] {
         padding: 5px;
-    }
-    input[type="date"] {
-        padding: 5px;
+        margin-bottom: 1em;
     }
     input[type="submit"] {
         background-color: palevioletred;
