@@ -2,7 +2,7 @@
     <div class="todos">
         <input class="filter-val" type="text" v-model="search" placeholder="Filter todos by title">
         <div v-bind:key="todo._id" v-for="todo in filteredTodos">
-            <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo._id)" />      
+            <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo._id)" v-on:update-todo="$emit('update-todo', todo)" />      
         </div>
     </div>
 </template>
